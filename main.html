@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+
+    <h1 class="text-cyan-500 text-2xl font-bold mb-4">Mahsulot Katalogi</h1>
+
+    <select name="category" id="all-category" class="border rounded px-2 py-1">
+        <option value="all">Barcha kategoriyalar</option>
+        <option value="beauty">beauty</option>
+        <option value="fragrances">fragrances</option>
+        <option value="groceries">groceries</option>
+    </select>
+
+    <select name="sort" id="sort" class="border rounded px-2 py-1">
+        <option value="">Narxlar bo'yicha saralash</option>
+        <option value="">Arzonidan qimmatiga</option>
+        <option value="">Qimmatidan arzoniga</option>
+    </select>
+
+    <input type="text" placeholder="Mahsulot qidirish..." class="border rounded px-2 py-1">
+
+    <div id="row" class="flex flex-wrap gap-4 justify-center items-center mb-6 mt-5">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
